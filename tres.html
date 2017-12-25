@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>javascript 3</title>
+	<link rel="stylesheet" href="">
+
+	<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+	
+	<script>
+			//creea un nuevo parrafo y lo añade al elemento div existente de la pagina
+			window.onload = function() {
+		    //creating a new paragraph
+		    var p = document.createElement("p");
+		    var node = document.createTextNode("Some new text");
+		    //adding the text to the paragraph
+		    p.appendChild(node);
+
+		    var div = document.getElementById("demo");
+		    div.appendChild(p);
+			};
+
+	</script>
+
+	<script >
+		//removiendo elementos
+		window.onload = function() {
+		    var parent = document.getElementById("demos");
+		    var child = document.getElementById("p1");
+		    parent.removeChild(child);
+		};
+
+
+		window.onload = function() {
+		    var p = document.createElement("p");
+		    var node = document.createTextNode("This is new");
+		    p.appendChild(node);
+
+		    var parent = document.getElementById("reem");
+		    var child = document.getElementById("pa");
+		    parent.replaceChild(p, child);
+			};
+  
+	</script>
+
+		
+</head>
+<body>
+
+	<div id="demo">some content</div>
+
+	<div id="demos">
+            <p id="p1">This is a paragraph.</p>
+            <p id="p2">This is another paragraph.</p>
+        </div>
+
+	<div id="reem">
+		<p style="color:#FF0000";>Reemplaza el primer texto</p>
+            <p id="pa">este es un texto.</p>
+            <p id="pe">este es otro texto.</p>
+        </div>
+
+      <!--animaciones -->
+      <div id="container">
+            <div id="box"> </div>
+        </div>
+
+	
+</body>
+</html>
